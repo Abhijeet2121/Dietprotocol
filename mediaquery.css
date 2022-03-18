@@ -1,0 +1,300 @@
+/* 1rem=1em=16px */
+/* BELOW 1344PX SMALL SCREEN LAPTOPS */
+@media (max-width: 84em){
+    .hero{
+        max-width: 120rem;
+    }
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+}
+/* BELOW 1200PX LANDSCAPE TABS */
+@media(max-width: 75em){
+    html{
+        font-size: 56.25%;
+    }
+    .heading-location
+    .secondary-heading
+    .heading-ms{
+        font-size: 3.2rem; 
+    }
+    .heading-tertiory{
+        font-size: 1.8rem;
+    }
+
+}
+
+/* BELOW 907px TABS */
+@media(max-width: 57em){
+    html{
+        font-size: 50%;
+    }
+
+    .main-nav-list{
+        gap: 1.2rem;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-img{
+        width: 60%;
+    }
+
+    .heading-location{
+        margin-bottom: 1.6rem;
+    }
+
+    .city-imgs{
+        column-gap: 1.6rem;
+    }
+
+    .delivered-meals{
+        justify-content: center;
+    }
+
+    .city-imgs img{
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .number-box{
+        font-size: 5.8rem;
+    }
+
+    .meal-content{
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    
+    }
+    .section-testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .gallary{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .feature-container{
+        column-gap: 2.4rem;
+    }
+
+    .container-cta{
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-form{
+        grid-template-columns: 1fr;
+    }
+    .cta-form button{
+        margin-top: 1.6rem;
+    }
+
+    .footer-container{
+        column-gap: 1.8rem;
+    }
+
+    .section-cta{
+        padding: 4.8rem 0 7.2rem 0;
+    }
+
+    .footer{
+        padding: 7.2rem;
+    }
+    /* Mobile navigation */
+
+    .btn-mobile-nav{
+        display: block;
+        z-index: 9999;
+    }
+
+    .header .main-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        
+        /*Hide Navigation  */
+        /* Allows no transition is set to display none */ /* display:none ; */
+        
+        /* can be animated */
+        /* 1st  step to hide content visually */
+        opacity: 0;
+
+        /* 2nd make unaccessible to mouse n keyboard */
+        pointer-events: none;
+        
+        /* 3rd hide from screen readers */
+        visibility: hidden;
+    }
+    .nav-open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+    }
+    .main-nav-list{
+        flex-direction: column;
+        row-gap: 4.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited{
+    font-size: 3rem;
+    }
+}
+/* BELOW 688PX TABS */
+@media(max-width:43em){
+
+    .city-imgs{
+        column-gap: .8rem;
+    }
+
+    .city-imgs img{
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .city-imgs p{
+        font-size: 1.4rem;
+    }
+    .location-cart{
+        font-size: 1.2rem;
+        }
+
+    .grid-column{
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+    .img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .img-box:nth-child(6) {
+        grid-row: 1;
+    }
+
+    .img-box{
+        transform: translateY(2.4rem);
+    }
+
+    .number-box{
+        font-size: 4.8rem;
+    }
+    .box-description{
+        line-height: 1.6rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .heading-ms{
+        font-size: 3.6rem;
+        margin-bottom: 3.8rem;
+    }
+    .meal-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .meal-list{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .gallary{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pricing--plan{
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-box{
+        justify-self: center;
+    }
+
+    .feature-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-box{
+        padding-top: 2.4rem;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col, .address{
+        grid-column: span 3;
+
+    }
+
+    .nav-col{
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+
+    }
+}
+/* BELOW 550PX PHONES */
+@media(max-width:34em){
+
+    .section-hero{
+        padding: 2.4rem 0 4.8rem 0;
+    }
+    .hero{
+        padding: 0 3.2rem;
+    }
+
+    .btn
+    .btn:link,
+    .btn:visited{
+        padding:2rem 1.4rem;
+    }
+
+    .hero-img{
+        width:80%;
+    }
+
+    .city-imgs{
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+
+    .meal-container{
+        grid-template-columns: 1fr;
+    }
+
+    .gallary{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-cta{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr
+    }
+
+    .cta-text-box{
+        padding: 3.2rem;
+    }
+
+    .cta-img-box{
+        /* height: 4.8rem; */
+        grid-row: 1;
+    }
+}
